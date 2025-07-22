@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/example")
 @RequiredArgsConstructor
-@Tag(name = "Аутентификация")
+@Tag(name = "Примеры",
+description = "Примеры запросов с разными правами доступа")
 public class ExampleController {
-    private final UserService service;
 
     @GetMapping
     @Operation(summary = "Доступен только авторизованным пользователям")
